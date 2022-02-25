@@ -1,0 +1,57 @@
+@import url(../../css/utils.css);
+.alert {
+    position: relative;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--light-shadow);
+    max-width: 50rem;
+    color: var(--clr-grey-13);
+    transition: var(--transition-medium);
+}
+
+.flex {
+    justify-content: start;
+}
+
+.alert.al-error {
+    background-color: var(--clr-red-danger);
+}
+
+.alert.al-success {
+    background-color: var(--clr-green-success);
+}
+
+.alert.al-info {
+    background-color: var(--clr-blue-info);
+}
+
+.alert.al-warning {
+    background-color: var(--clr-warning);
+}
+
+.alert .icon-position {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .alert .icon-position {
+        align-self: flex-start;
+    }
+    .alert .alert-details {
+        flex-direction: column;
+    }
+}
+
+.alert .icon-font .icon-cross {
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 1px currentColor;
+    color: var(--clr-white);
+    transition: var(--transition-medium);
+}
+
+.alert .icon-font .icon-cross:hover {
+    -webkit-text-stroke: 2px currentColor;
+    transform: var(--scale-medium);
+    color: var(--clr-grey-2);
+}

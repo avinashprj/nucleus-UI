@@ -1,0 +1,138 @@
+@import url(../../css/utils.css);
+
+.btn,
+.btn:link {
+  border: none;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  /* border-radius: 10rem; */
+  background-color: var(--clr-primary-5);
+  color: white;
+  overflow: hidden;
+  transition: var(--transition);
+}
+/* note: CSS for btn outline */
+.btn.btn-outline-primary {
+  outline: 1px solid var(--clr-primary-5);
+  background-color: white;
+  color: var(--clr-primary-5);
+}
+
+.btn.btn-outline-primary:hover {
+  outline: none;
+  background-color: var(--clr-grey-1);
+  color: var(--clr-white);
+}
+.btn.btn-outline-secondary {
+  outline: 1px solid var(--clr-grey-1);
+  background-color: white;
+  color: var(--clr-grey-1);
+}
+
+.btn.btn-outline-secondary:hover {
+  outline: none;
+  background-color: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+/* note: CSS for btn outline end*/
+
+.btn.btn-scale:hover {
+  transform: translateY(-2px) var(--scale-smallest);
+}
+
+.btn:hover {
+  background-color: var(--clr-grey-1);
+}
+.btn:focus {
+  outline: none;
+  -webkit-animation: pulsate 1s;
+  animation: pulsate 1s;
+}
+
+.btn.btn-round {
+  border-radius: 3rem;
+}
+.btn.btn-squared {
+  border-radius: 0.7rem;
+}
+
+/* note: CSS for btn Gradient */
+.btn.btn-gradient {
+  font-size: 1.8rem;
+  padding: 0;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-primary-6),
+    var(--clr-primary-4)
+  );
+}
+@media only screen and (max-width: 500px) {
+  .btn.btn-gradient {
+    font-size: 1.5rem;
+  }
+}
+
+.btn.btn-gradient:hover {
+  background-image: linear-gradient(
+    to left bottom,
+    var(--clr-primary-6),
+    var(--clr-primary-4)
+  );
+}
+.btn-gradient > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+.btn .btn--visible {
+  padding: 1em 3.5em;
+}
+.btn .btn--invisible {
+  position: absolute;
+  padding: 1em 0;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.btn:hover .btn--visible {
+  transform: translateY(100%);
+}
+.btn:hover .btn--invisible {
+  transform: translateY(0);
+}
+/* note: CSS for btn Gradient end */
+
+/* note: CSS for btn Float */
+
+.btn-floating {
+  position: relative;
+  transition: var(--transition);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--clr-primary-5);
+  border: none;
+}
+#main-btn {
+  width: 5rem;
+  height: 5rem;
+}
+#main-btn:hover {
+  background-color: var(--clr-primary-4);
+}
+
+.float-icon {
+  color: var(--clr-white);
+}
+#floating-btn-container {
+  transition: var(--transition-medium);
+  opacity: 0;
+  visibility: hidden;
+}
+#floating-btn-container.show {
+  opacity: 1;
+  visibility: visible;
+}

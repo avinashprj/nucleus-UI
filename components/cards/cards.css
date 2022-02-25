@@ -1,0 +1,25 @@
+@import url(../../css/utils.css);
+
+.card {
+  position: relative;
+
+  width: 90%;
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid black;
+}
+
+.card .card-header.flex-base {
+}
+
+.card .card-header .card-thumb {
+  flex: 0 0 20%;
+}
+
+.card .card-header .card-header-text-primary {
+  font-weight: 500;
+}
+.card .card-header .card-header-text-secondary {
+}

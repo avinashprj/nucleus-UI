@@ -1,0 +1,96 @@
+@import url(../../css/utils.css);
+.avatar.avatar-round > img {
+  border-radius: 50%;
+}
+.avatar.avatar-squared > img {
+  border-radius: 10%;
+}
+
+.avatar {
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.avatar-text {
+  background-color: var(--clr-primary-5);
+  border-radius: 50%;
+  color: var(--clr-white);
+}
+
+.size-smallest > img,
+.avatar-text-smallest {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size-smaller > img,
+.avatar-text-smaller {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size-small > img,
+.avatar-text-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.size-medium > img,
+.avatar-text-medium {
+  width: 4rem;
+  height: 4rem;
+}
+
+.size-large > img,
+.avatar-text-large {
+  width: 6rem;
+  height: 6rem;
+}
+
+.size-larger > img,
+.avatar-text-larger {
+  width: 8rem;
+  height: 8rem;
+}
+
+.size-largest > img,
+.avatar-text-largest {
+  width: 10rem;
+  height: 10rem;
+}
+.size-huge > img,
+.avatar-text-huge {
+  width: 12rem;
+  height: 12rem;
+}
+
+.avatar.avatar-round .avatar-presence {
+  border: 0.3rem solid #fff;
+  padding: 8%;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  right: 5%;
+  bottom: 10%;
+}
+
+.avatar .avatar-presence-red {
+  background-color: var(--clr-red-danger);
+}
+.avatar .avatar-presence-green {
+  background-color: var(--clr-green-light);
+}
+.avatar .avatar-presence-grey {
+  background-color: var(--clr-grey-1);
+}
+
+img::after {
+  content: "";
+  z-index: 2;
+  display: block;
+  color: red;
+  border: 1px solid #f30;
+  background-color: blue;
+  position: absolute;
+}

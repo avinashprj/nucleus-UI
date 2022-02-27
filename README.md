@@ -1,2 +1,2 @@
 # component library
- Component library for CSS for making your lives easy 
+ Component library for CSS to make your lives easy 

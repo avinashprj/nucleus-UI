@@ -110,6 +110,7 @@ body {
   font-size: 7rem;
   text-transform: none;
   margin-bottom: 3.2rem;
+  transition: var(--transition);
 }
 
 .hero-info p {

@@ -69,6 +69,12 @@ Note: Variables
   --font-family: "Poppins", sans-serif;
   --linear-g-1: linear-gradient(to left bottom, #173ead, #2857da);
   --linear-g-2: linear-gradient(to right bottom, #173ead, #2857da);
+  --translateY: translateY(3rem);
+  --translateY-neg: translateY(-3rem);
+  --translateX: translateX(3rem);
+  --translateX-neg: translateX(-3rem);
+  --translate: translate(3rem, 3rem);
+  --translate-neg: translate(-3rem, -3rem);
 }
 
 /*
@@ -612,6 +618,19 @@ note: Animations
   -webkit-animation: fade 0.3s;
   -moz-animation: fade 0.3s;
 }
+.animate-up {
+  animation: moveUp 0.5s ease-in-out;
+}
+.animate-left {
+  animation: moveInLeft 0.5s ease-in-out;
+}
+.animate-right {
+  animation: moveInRight 0.5s ease-in-out;
+}
+
+.animate-scale {
+  animation: scaleInOut 0.5s ease-in-out;
+}
 
 /* note: Animate opacity */
 
@@ -647,6 +666,55 @@ note: Animations
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* note:animate on load */
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: var(--translateY);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleInOut {
+  0% {
+    opacity: 0;
+    transform: var(--scale-large);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: var(--translateX-neg);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: var(--translateX);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

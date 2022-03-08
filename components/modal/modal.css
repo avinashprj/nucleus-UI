@@ -1,0 +1,43 @@
+@import url(../../css/utils.css);
+@import url(../button/button.css);
+@import url(../input/input.css);
+.form {
+  position: relative;
+}
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.modal-bg.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.open {
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.modal {
+  width: 70%;
+  max-width: 40rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: var(--transition-medium);
+  background-color: white;
+  box-shadow: var(--dark-shadow);
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+}

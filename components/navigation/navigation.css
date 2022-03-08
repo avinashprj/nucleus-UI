@@ -40,6 +40,9 @@
   .nav-toggle {
     display: block;
   }
+  .nav-links {
+    display: none;
+  }
 }
 .navbar .nav-logo {
   font-size: 2.2rem;
@@ -56,6 +59,7 @@
   transition: var(--transition-fast);
 }
 .nav-link:hover {
+  color: var(--clr-primary-5);
 }
 .navbar .nav-icons {
   transition: var(--transition-medium);
@@ -130,7 +134,7 @@
 .sidebar-modal,
 .sidebar {
   position: fixed;
-  transition: var(--transition-medium);
+  transition: opacity 0.2s linear;
   left: 0;
   top: 8rem;
   width: 100vw;
@@ -140,7 +144,6 @@
   visibility: hidden;
 }
 .sidebar-modal.open {
-  transition: var(--transition-medium);
   opacity: 1;
   visibility: visible;
 }
@@ -164,9 +167,17 @@
   font-size: 1.8rem;
   padding: 1rem;
   border-bottom: 1px solid white;
+  transition: var(--transition-fast);
 }
+.sidebar-links li:hover {
+  background-color: var(--clr-grey-14);
+  border-radius: 2px;
+  color: var(--clr-grey-1);
+  border: 0;
+}
+
 .sidebar-links a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: currentColor;
 }

@@ -20,12 +20,9 @@ function toggleSideBarModal() {
 
 function OutsideClick(e) {
   if (e.target.classList.contains('sidebar-modal')) {
-    btnHamburger.classList.toggle('open');
-    sidebarModal.classList.toggle('open');
-    sidebar.classList.toggle('open');
+    toggleSideBarModal();
   } else if (e.target.classList.contains('search-bar-modal')) {
-    searchBarModal.classList.toggle('open');
-    searchBar.classList.toggle('open');
+    toggleSearchModal();
   }
 }
 btnHamburger.addEventListener('click', toggleSideBarModal);

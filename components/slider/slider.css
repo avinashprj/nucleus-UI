@@ -1,0 +1,29 @@
+@import url(../../css/utils.css);
+.slider-range input[type="range"] {
+  -webkit-appearance: none;
+  height: 0.7rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  background: var(--clr-grey-14);
+}
+
+.slider-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: var(--clr-primary-5);
+  cursor: ew-resize;
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}
+.slider-range input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: var(--clr-primary-5);
+  cursor: ew-resize;
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}

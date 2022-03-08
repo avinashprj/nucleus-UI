@@ -1,0 +1,56 @@
+@import url(../../css/utils.css);
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  outline: 1px solid currentColor;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.grid-container.grid-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-container.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-container.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-container.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-container .grid-item {
+  border-radius: 0.5rem;
+  min-height: 5rem;
+  display: grid;
+  place-content: center;
+}
+
+.grid-container .grid-item.item-1 {
+  background-color: var(--clr-red-danger);
+}
+.grid-container .grid-item.item-2 {
+  background-color: var(--clr-red-light);
+}
+.grid-container .grid-item.item-3 {
+  background-color: var(--clr-green-light);
+}
+.grid-container .grid-item.item-4 {
+  background-color: var(--clr-warning);
+}
+.grid-container .grid-item.item-5 {
+  background-color: var(--clr-primary-5);
+  color: white;
+}
+.grid-container .grid-item.item-6 {
+  background-color: var(--clr-grey-1);
+  color: white;
+}
+.grid-container .grid-item.item-7 {
+  background-color: var(--clr-grey-14);
+}
+.grid-container .grid-item.item-8 {
+  background-color: var(--clr-grey-5);
+  color: white;
+}

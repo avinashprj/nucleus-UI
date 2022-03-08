@@ -67,7 +67,7 @@
     var(--clr-primary-4)
   );
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25em) {
   .btn.btn-gradient {
     font-size: 1.5rem;
   }

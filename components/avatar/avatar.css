@@ -18,48 +18,48 @@
   color: var(--clr-white);
 }
 
-.size-smallest > img,
+.smallest > img,
 .avatar-text-smallest {
   width: 2rem;
   height: 2rem;
 }
 
-.size-smaller > img,
+.smaller > img,
 .avatar-text-smaller {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.size-small > img,
+.small > img,
 .avatar-text-small {
   width: 3rem;
   height: 3rem;
 }
 
-.size-medium > img,
+.medium > img,
 .avatar-text-medium {
   width: 4rem;
   height: 4rem;
 }
 
-.size-large > img,
+.large > img,
 .avatar-text-large {
   width: 6rem;
   height: 6rem;
 }
 
-.size-larger > img,
+.larger > img,
 .avatar-text-larger {
   width: 8rem;
   height: 8rem;
 }
 
-.size-largest > img,
+.largest > img,
 .avatar-text-largest {
   width: 10rem;
   height: 10rem;
 }
-.size-huge > img,
+.huge > img,
 .avatar-text-huge {
   width: 12rem;
   height: 12rem;

@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="./input.css" />
+    <script
+      src="https://kit.fontawesome.com/a789ffa956.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./document.css" />
     <title>Documentation | NucleusUI</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <nav class="nav flex">
+        <div class="nav-center flex-nav">
+          <div class="nav-header">
+            <div class="nav-logo flex animate-left">
+              <span class="flex">
+                <svg
+                  class="icon-logo m-right-smallest"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M15 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                  />
+                  <path
+                    d="M3 12c0-2.61 1.67-4.83 4-5.65V4.26C3.55 5.15 1 8.27 1 12s2.55 6.85 6 7.74v-2.09c-2.33-.82-4-3.04-4-5.65z"
+                  />
+                </svg>
+              </span>
+              <h3 class="logo-animate"><a href="../index.html">Nucleus</a></h3>
+            </div>
+          </div>
 
-<body></body>
+          <a
+            href="https://github.com/avinashprj/component-library"
+            target="_blank"
+            class="btn signin-btn flex animate-right"
+          >
+            <span class="flex">
+              <svg class="icon icon-github icon-svg icon-svg-left">
+                <use xlink:href="../images/symbol-defs.svg#icon-github"></use>
+              </svg>
+            </span>
+            <span>Github</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main className="doc-container">
+      <aside className="nav-sidebar ">
+        <div>
+          <div>
+            <h4 className="list-topic">GETTING STARTED</h4>
+            <ul className="list-subtopic m-bottom-small">
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Installation
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Colors
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Typography
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="list-topic">COMPONENTS</h4>
+            <ul className="list-subtopic">
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Avatar
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Alert
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Badge
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Button
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">Card</button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Image
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Input
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Text Utilites
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Lists
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Navigation
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Modal
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Rating
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">
+                  Toast
+                </button>
+              </li>
+              <li className="sidebar-link-animate">
+                <button className="sidebar-btn link" type="button">Grid</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* Components Navigation End */}
+      </aside>
+      <div className="main-container">
+        <section className="doc-content">
+          <h3 className="title">Installation</h3>
+        </section>
+      </div>
+    </main>
 
+    <script src="./document.js"></script>
+  </body>
 </html>

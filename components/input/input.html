@@ -14,9 +14,9 @@
   </head>
   <body>
     <section class="component-container flex-container">
-      <form action="#" class="form">
+      <form action="#" class="form form-signin">
         <div class="m-bottom-small flex-jc-center">
-          <h3 class="">Login</h3>
+          <h3 class="m-bottom-small">Login</h3>
         </div>
         <div class="form-group">
           <input
@@ -67,10 +67,102 @@
             <span><i class="fa fa-regular fa-face-frown"></i></span>
             Don't have an account ?
 
-            <a href="#" class="link form-footer-link">Create one</a>
+            <a id="form-signin-link" href="#" class="link form-footer-link"
+              >Create one</a
+            >
+          </p>
+        </div>
+      </form>
+      <form action="#" class="form form-signup">
+        <div class="m-bottom-small flex-jc-center">
+          <h3 class="m-bottom-small">Sign Up</h3>
+        </div>
+        <div class="form-group flex">
+          <a href="#">
+            <i
+              class="font-icon fa fa-brands fs-medium m-right-small fa-google"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="font-icon fa fa-brands fs-medium m-right-small fa-twitter"
+            ></i>
+          </a>
+          <a href="#">
+            <i class="font-icon fa fa-brands fs-medium fa-github"></i>
+          </a>
+        </div>
+        <div class="form-group">
+          <p class="form-divider"><span class="or">or</span></p>
+        </div>
+        <div class="form-signup-group">
+          <input
+            id="name"
+            type="name"
+            class="form-input"
+            placeholder="Full Name"
+            required
+          />
+          <label for="name" class="form-label">Full Name</label>
+        </div>
+        <div class="form-signup-group">
+          <input
+            id="email"
+            type="email"
+            class="form-input"
+            placeholder="Email Address"
+            minlength="8"
+            required
+          />
+          <label for="email" class="form-label">Email Address</label>
+        </div>
+        <div class="form-signup-group">
+          <input
+            id="password"
+            type="password"
+            class="form-input"
+            placeholder="Password"
+            minlength="8"
+            required
+          />
+          <label for="password" class="form-label">Password</label>
+        </div>
+        <div class="form-signup-group">
+          <input
+            id="password"
+            type="password"
+            class="form-input"
+            placeholder="Confirm Password"
+            minlength="8"
+            required
+          />
+          <label for="password" class="form-label">Confirm Password</label>
+        </div>
+
+        <div class="form-group">
+          <button
+            class="btn btn-squared btn-outline-secondary w-100 spacing-medium weight-600"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="form-footer form-group flex">
+          <p class="">
+            <span><i class="fa fa-regular fa-face-smile-beam"></i></span>
+            Already have an account
+
+            <a
+              id="form-signup-link"
+              href="#"
+              class="link form-footer-link m-left-smallest"
+            >
+              Log in</a
+            >
           </p>
         </div>
       </form>
     </section>
+
+    <script src="./input.js"></script>
   </body>
 </html>

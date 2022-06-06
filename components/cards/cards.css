@@ -87,18 +87,73 @@
   transform: skew(-27deg);
 }
 
+.card-wishlist {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
+}
+.card-heart:hover {
+  fill: red;
+}
+
 .card-img {
+  position: relative;
   text-align: center;
   background: #c4c1c2;
+  transition: var(--transition);
 }
 
 .card-img > img {
   width: 25rem;
 }
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.card-img:hover .card-img-overlay,
+.card-img:hover .card-img-overlay-symbol {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.card-img-overlay-symbol {
+  transition: var(--transition-medium);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .card-img-overlay-symbol::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+} */
+.card-img-overlay-symbol svg {
+  fill: white;
+  width: 4rem;
+  height: 4rem;
+}
 @media only screen and (max-width: 25em) {
-  .card-img > img {
+  /* .card-img > img {
     width: 100%;
-  }
+  } */
 }
 
 .card-details {

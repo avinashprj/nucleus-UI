@@ -1,0 +1,10 @@
+@import url(../css/components.css);
+@import url(../css/style.css);
+
+.nav {
+  position: sticky;
+  top: 0;
+}
+.nav-center {
+  max-width: 140rem;
+}

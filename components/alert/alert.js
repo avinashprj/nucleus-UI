@@ -8,4 +8,3 @@ function handleClick(e) {
   alertDiv.style.opacity = '0';
   setTimeout(() => alertDiv.remove(), 300);
 }
-const ds = {};

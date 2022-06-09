@@ -519,6 +519,9 @@ Note: IMAGE-SIZE
   block-size: auto;
   width: 100%;
 }
+.res {
+  height: auto;
+}
 .size-smaller {
   width: 4rem;
   height: 4rem;

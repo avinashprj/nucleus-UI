@@ -16,16 +16,6 @@
   color: var(--clr-primary-5);
 }
 
-.btn:disabled {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-}
-.btn:disabled:hover {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-}
 .btn.btn-outline-primary:hover {
   outline: none;
   background-color: var(--clr-grey-1);
@@ -143,4 +133,14 @@
 #floating-btn-container.show {
   opacity: 1;
   visibility: visible;
+}
+.btn:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.btn:disabled:hover {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
